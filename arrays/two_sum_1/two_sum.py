@@ -13,6 +13,6 @@ def find_two_sum_opt(nums: [int], target: int) -> [int]:
     for i, p1 in enumerate(nums):
         if p1 in nums_map:
             return [nums_map[p1], i]
-        number_to_find = target - nums[i]
+        number_to_find = target - p1
         nums_map[number_to_find] = i
     return None
