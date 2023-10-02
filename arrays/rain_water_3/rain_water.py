@@ -25,7 +25,7 @@ def get_trapped_rain_water(heights: [int]) -> int:
 '''
 Logica del algoritmo
 
-1.Identificar el punter con el valor mas pequeño
+1.Identificar el puntero con el valor mas pequeño
 2.Es el valor del puntero mayor o igual al maximo en este lado?
     si-> actualizar el maximo en ese lado
     no-> obtner el agua almacenada y sumarla al total
