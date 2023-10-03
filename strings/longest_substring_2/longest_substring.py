@@ -26,9 +26,12 @@ def length_of_longest_substring_opt(string: str) -> int:
 
     for right in range(len(string)):
         current_char = string[right]
-        # toma el indice del caracter si este se en encuantra en el diccionario
+        # toma el indice del caracter si este se encuentra en el diccionario
         # de lo contrario coloca un -1
-        prev_seen_char = -1 if not (current_char in seen_char.keys()) else seen_char[current_char]
+        prev_seen_char = -1
+
+        if current_char in seen_char.keys():
+            prev_seen_char = seen_char[current_char]
 
         if prev_seen_char >= left:
             left = prev_seen_char + 1
