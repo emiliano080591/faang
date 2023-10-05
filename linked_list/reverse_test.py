@@ -1,7 +1,6 @@
 import unittest
 
 from linked_list.node import Node
-from linked_list.reverse import reverse_linked_list
 from linked_list.simple_linked_list import SLinkedList
 
 
