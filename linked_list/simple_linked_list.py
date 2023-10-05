@@ -26,3 +26,15 @@ class SLinkedList:
             array.append(node.data)
             node = node.next
         return array
+
+    def reverse(self):
+        prev = None
+        current = self.head_val
+
+        while current is not None:
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+
+        return SLinkedList(prev)

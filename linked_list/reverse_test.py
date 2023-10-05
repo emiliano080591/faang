@@ -7,10 +7,9 @@ from linked_list.simple_linked_list import SLinkedList
 
 class Test(unittest.TestCase):
     def test_reverse_list(self):
-        head = generate_test_case().head_val
-        self.assertListEqual(reverse_linked_list(head).list_to_array(), ["Wen", "Tue", "Mon"])
+        self.assertListEqual(generate_test_case().reverse().list_to_array(), ["Wen", "Tue", "Mon"])
         head = generate_test_case2().head_val
-        self.assertListEqual(reverse_linked_list(head).list_to_array(), [5, 4, 3, 2, 1])
+        self.assertListEqual(generate_test_case2().reverse().list_to_array(), [5, 4, 3, 2, 1])
 
 
 def generate_test_case() -> SLinkedList:
