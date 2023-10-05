@@ -18,3 +18,11 @@ class SLinkedList:
             last_val = last_val.next
 
         last_val.next = node
+
+    def list_to_array(self) -> []:
+        array = []
+        node = self.head_val
+        while node is not None:
+            array.append(node.data)
+            node = node.next
+        return array
