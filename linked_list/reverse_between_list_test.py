@@ -1,8 +1,8 @@
 import unittest
 
-from linked_list.node import Node
-from linked_list.reverse_between_list import reverse_between
-from linked_list.simple_linked_list import SLinkedList
+from linked_list.base.node import Node
+from linked_list.reverse_between_list_2 import reverse_between
+from linked_list.base.simple_linked_list import SLinkedList
 
 
 class Test(unittest.TestCase):
