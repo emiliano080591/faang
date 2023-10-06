@@ -12,19 +12,19 @@ class Test(unittest.TestCase):
 
 
 def generate_test_case() -> SLinkedList:
-    list = SLinkedList(Node("Mon"))
-    list.add_node(Node("Tue"))
-    list.add_node(Node("Wen"))
+    list = SLinkedList("Mon")
+    list.add_node("Tue")
+    list.add_node("Wen")
 
     return list
 
 
 def generate_test_case2() -> SLinkedList:
-    list = SLinkedList(Node(1))
-    list.add_node(Node(2))
-    list.add_node(Node(3))
-    list.add_node(Node(4))
-    list.add_node(Node(5))
+    list = SLinkedList(1)
+    list.add_node(2)
+    list.add_node(3)
+    list.add_node(4)
+    list.add_node(5)
 
     return list
 

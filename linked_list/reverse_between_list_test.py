@@ -1,8 +1,7 @@
 import unittest
 
-from linked_list.base.node import Node
-from linked_list.reverse_between_list_2 import reverse_between
 from linked_list.base.simple_linked_list import SLinkedList
+from linked_list.reverse_between_list_2 import reverse_between
 
 
 class Test(unittest.TestCase):
@@ -12,11 +11,11 @@ class Test(unittest.TestCase):
 
 
 def generate_test_case() -> SLinkedList:
-    list = SLinkedList(Node(1))
-    list.add_node(Node(2))
-    list.add_node(Node(3))
-    list.add_node(Node(4))
-    list.add_node(Node(5))
-    list.add_node(Node(6))
+    list = SLinkedList(1)
+    list.add_node(2)
+    list.add_node(3)
+    list.add_node(4)
+    list.add_node(5)
+    list.add_node(6)
 
     return list
